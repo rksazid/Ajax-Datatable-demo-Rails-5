@@ -1,24 +1,55 @@
-# README
+# Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Ajax Datatable demo Rails 5
 
-Things you may want to cover:
+```
+ruby: 2.7.1
+rails: 5.2.4.4
+```
 
-* Ruby version
+## Install
 
-* System dependencies
+### Clone the repository
 
-* Configuration
+```shell
+git clone https://github.com/rksazid/Ajax-Datatable-demo-Rails-5.git
+cd Ajax-Datatable-demo-Rails-5
+```
 
-* Database creation
+### Check your Ruby version
 
-* Database initialization
+```shell
+ruby -v
+```
 
-* How to run the test suite
+The ouput should start with something like `ruby 2.7.1`
 
-* Services (job queues, cache servers, search engines, etc.)
+If not, install the right ruby version using [rbenv](https://gorails.com/setup/ubuntu/22.04) (it could take a while):
 
-* Deployment instructions
+```shell
+rbenv install 2.7.1
+```
 
-* ...
+### Install dependencies
+
+Using [Bundler](https://github.com/bundler/bundler)
+
+```shell
+bundle install
+```
+
+### Set environment variables
+
+See [config/env.sample](https://github.com/rksazid/Ajax-Datatable-demo-Rails-5/blob/main/.env.sample) and copy the file with name `.env` and fill-up the required data
+
+### Initialize the database
+
+```shell
+rails db:create db:migrate db:seed
+```
+
+## Serve
+
+```shell
+rails s
+```
